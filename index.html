@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FORMULARIO HTML | Forms </title>
+
+</head>
+
+<body>
+
+    <h1>FORMULARIO</h1>
+
+    <form action="index.html" method="GET">
+
+        <fieldset>
+            <legend>Personal</legend>
+
+            <div>
+                <label for ="name">Name    </label>
+                <input type ="text" name="name" id="name"   required>
+            </div>
+
+            <div>
+                <label for="fecha">Day of Birth</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+
+            <div>
+
+                <label for="animal">Which is your favorite Animal ?</label>
+                <select>
+                        <option>--Elija una opcion--</option>
+                        <option>Perro</option>
+                        <option>Gato</option>
+                        <option>Leon</option>
+                        <option>Oso</option>
+                        <option>Pericos</option>
+                        <option>Caballo</option>
+                        <option>Girafa</option>
+                        <option>Iguana</option>
+                        <option>Pinguino</option>
+                    </select>
+        
+            </div>
+        
+        </fieldset>
+        
+        <fieldset>
+            <legend>Account</legend>
+            <div>
+
+                <label for="email">Email    :</label>
+            
+                <input type="email" name="email" id="email" required>
+        
+            </div>
+            
+        <div>
+
+            <label for="password">Password    :</label>
+
+            <input type="password" name="username" id="username" required pattern=".{5,10}"
+
+            title="5 to 10 characters" >
+
+        </div>
+
+        <div>
+            <label for="Verify">Verify Password</label>
+            <input type="password" name="username" id="username" required pattern =".{5,10}"
+            title= "5 to 10 characters" >
+        </div>
+
+      </fieldset> 
+        
+     <fieldset>
+         <legend>Contact</legend>
+        <div>
+            <label for ="address" >Address</label>
+            <input type="text" name="address" id="address" required >
+        </div>
+
+        <div>
+            <label for="city">City  :</label>
+            <select>
+                <option>--Elija una opcion--</option>
+                <option>El Salvador</option>
+                <option>Estados Unidos</option>
+                <option>Argentina</option>
+                <option>Guatemala</option>
+                <option>Mexico</option>
+                <option>Canada</option>
+                <option>Colombia</option>
+                <option>Panama</option>
+                <option>Brasil</option>
+                <option>España</option>
+                <option>Inglaterra</option>
+                <option>Rusia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="country">Country    :</label>
+            <input type="text" name="country" id="country" required>
+        </div>
+
+        <div>
+            <label for= "phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        </fieldset>
+
+        <input type="submit" value="Send">
+
+    </form>
+
+</body>
+
+</html>
