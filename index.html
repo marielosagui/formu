@@ -12,106 +12,96 @@
 
 <body>
 
-    <h1>FORMULARIO</h1>
+    <center><h1>FORMULARIO</h1></center>
 
-    <form action="index.html" method="GET">
+    <form action="index.html" method="post">
 
         <fieldset>
             <legend>Personal</legend>
 
-            <div>
+           
                 <label for ="name">Name    </label>
-                <input type ="text" name="name" id="name"   required>
-            </div>
+                <input type ="text" name="name" id="name" placeholder="john"  required>
+           
 
-            <div>
+           
                 <label for="fecha">Day of Birth</label>
-                <input type="date" id="fecha" name="fecha">
-            </div>
+                <input type="date" id="fecha" name="fecha"required>
+           
 
-            <div>
+           
 
                 <label for="animal">Which is your favorite Animal ?</label>
                 <select>
                         <option>--Elija una opcion--</option>
-                        <option>Perro</option>
-                        <option>Gato</option>
-                        <option>Leon</option>
-                        <option>Oso</option>
-                        <option>Pericos</option>
-                        <option>Caballo</option>
-                        <option>Girafa</option>
-                        <option>Iguana</option>
-                        <option>Pinguino</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Leon">Leon</option>
+                        <option value="Oso">Oso</option>
+                        <option value="Perico">Perico</option>
+                        <option value="Caballo">Caballo</option>
+                        <option value="Girafa">Girafa</option>
+                        <option value="Iguana">Iguana</option>
+                        <option value="Pinguino">Pinguino</option>
                     </select>
         
-            </div>
+           
         
         </fieldset>
         
         <fieldset>
             <legend>Account</legend>
-            <div>
+           
 
-                <label for="email">Email    :</label>
+            <label for="email">Email</label>
             
-                <input type="email" name="email" id="email" required>
-        
-            </div>
-            
-        <div>
+            <input type="email" name="email" id="email" required>
+       
+            <label for="password">Password </label>
 
-            <label for="password">Password    :</label>
-
-            <input type="password" name="username" id="username" required pattern=".{5,10}"
+            <input type="password" name="username" id="username" maxlength="10"
 
             title="5 to 10 characters" >
-
-        </div>
-
-        <div>
+       
             <label for="Verify">Verify Password</label>
-            <input type="password" name="username" id="username" required pattern =".{5,10}"
+            <input type="password" name="username" id="username" maxlength="10"
             title= "5 to 10 characters" >
-        </div>
-
+       
       </fieldset> 
         
      <fieldset>
          <legend>Contact</legend>
-        <div>
+        
             <label for ="address" >Address</label>
             <input type="text" name="address" id="address" required >
-        </div>
+        
 
         <div>
             <label for="city">City  :</label>
             <select>
                 <option>--Elija una opcion--</option>
-                <option>El Salvador</option>
-                <option>Estados Unidos</option>
-                <option>Argentina</option>
-                <option>Guatemala</option>
-                <option>Mexico</option>
-                <option>Canada</option>
-                <option>Colombia</option>
-                <option>Panama</option>
-                <option>Brasil</option>
-                <option>España</option>
-                <option>Inglaterra</option>
-                <option>Rusia</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value ="Estados Unidos">Estados Unidos</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Canada">Canada</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Panama">Panama</option>
+                <option value="Brasil">Brasil</option>
+                <option value="España">España</option>
+                <option value="Inglaterra">Inglaterra</option>
+                <option value="Rusia">Rusia</option>
             </select>
         </div>
 
-        <div>
+       
             <label for="country">Country    :</label>
             <input type="text" name="country" id="country" required>
-        </div>
-
-        <div>
+      
             <label for= "phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" required>
-        </div>
+            <input type="tel" name="phone" id="phone" maxlength="8" required>
+       
 
         </fieldset>
 
